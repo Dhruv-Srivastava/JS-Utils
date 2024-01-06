@@ -28,3 +28,22 @@ Feel free to browse through the utility functions in the repository and use them
 
   const arrayValueType = checkType([1, 2, 3]);
   console.log(arrayValueType); // Output: 'array'
+  
+### [random-element.js](random-element.js)
+- [`getRandomElement(array)`](random-element.js#L1): Returns a random element from the given array.
+
+  **Parameters:**
+  - `array` (Array): The array from which to retrieve a random element.
+
+  **Returns:**
+  - A random element from the array, or `undefined` if the array is empty.
+
+  **Example:**
+  ```javascript
+  const numbers = [1, 2, 3, 4, 5];
+  const randomValue = getRandomElement(numbers);
+  console.log(randomValue); // Output: Random element from the 'numbers' array
+
+  const emptyArray = [];
+  const undefinedValue = getRandomElement(emptyArray);
+  console.log(undefinedValue); // Output: undefined (empty array)
