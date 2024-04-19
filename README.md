@@ -47,3 +47,26 @@ Feel free to browse through the utility functions in the repository and use them
   const emptyArray = [];
   const undefinedValue = getRandomElement(emptyArray);
   console.log(undefinedValue); // Output: undefined (empty array)
+
+### [shuffle.js](shuffle.js)
+- [`shuffle(array)`](shuffle.js#L1): Shuffles the elements of the given array in place using the Fisher-Yates shuffle algorithm.
+
+  **Parameters:**
+  - `array` (Array): The array to be shuffled.
+
+  **Returns:**
+  - This function modifies the original array in place. It does not return a new array.
+
+  **Algorithm:**
+  - The shuffle function uses the Fisher-Yates shuffle algorithm, also known as the Knuth shuffle, to efficiently randomize the order of elements in the array.
+
+  **Examples:**
+  ```javascript
+  const arr1 = [1, 2, 3, 4, 5, 6];
+  shuffle(arr1);
+  console.log(arr1); // Output: Shuffled array: [4, 1, 2, 6, 3, 5]
+
+  const arr2 = ['apple', 'banana', 'orange', 'grape', 'kiwi'];
+  shuffle(arr2);
+  console.log(arr2); // Output: Shuffled array of fruits: ['grape', 'kiwi', 'banana', 'orange', 'apple']
+
