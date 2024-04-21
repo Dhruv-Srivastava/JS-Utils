@@ -70,3 +70,21 @@ Feel free to browse through the utility functions in the repository and use them
   shuffle(arr2);
   console.log(arr2); // Output: Shuffled array of fruits: ['grape', 'kiwi', 'banana', 'orange', 'apple']
 
+### [get-sign.js](get-sign.js)
+- [`getSign(number)`](get-sign.js#L1): Returns the sign of the given number, including the case of -0.
+
+  **Parameters:**
+  - `number` (number): The number for which to determine the sign.
+
+  **Returns:**
+  - The sign of the number, or `undefined` if the input is not a number.
+
+  **Example:**
+  ```javascript
+  const sign1 = getSign(5); // Output: 1
+  const sign2 = getSign(-5); // Output: -1
+  const sign3 = getSign(0); // Output: +1
+  const sign4 = getSign(-0); // Output: -1
+  const sign5 = getSign('Hello'); // Output: undefined
+
+
